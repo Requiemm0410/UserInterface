@@ -24,9 +24,6 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        binding.btnOpenDrawer.setOnClickListener(view -> {
-            binding.drawerLayout.openDrawer(GravityCompat.START);
-        });
         getSupportFragmentManager().beginTransaction().replace(R.id.container, new HomeFragment()).commit();
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
             int id = item.getItemId();
