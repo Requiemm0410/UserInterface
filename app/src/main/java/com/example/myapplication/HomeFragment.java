@@ -21,13 +21,13 @@ public class HomeFragment extends Fragment {
         binding.btnMusic.setOnClickListener(v -> {
             requireActivity().getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.container, new DashboardFragment())
+                    .replace(R.id.container, new MusicFragment())
                     .commit();
         });
         binding.btnOtt.setOnClickListener(v -> {
             requireActivity().getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.container, new SocialFragment())
+                    .replace(R.id.container, new OttFragment())
                     .commit();
         });
     }
